@@ -20,7 +20,7 @@ if (!channelId || !senderType) {
 }
 
 if (!audioId && message.messageType === "text") {
-    var agentUrl = "https://cloud.info.lc.ac.ae/agentforce-api";
+    var agentUrl = "https://YOUR-DOMAIN.ae/agentforce-api"; // This is the other Cloud Pages URL to handle the Agentforce Conversation
     var agentPayload = {
         text: message.messageBody.text.body,
         contactId: message.contactId,
